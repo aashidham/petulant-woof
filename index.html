@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>When2meet</title>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script type="text/javascript" src = "http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script type="text/javascript" src = "assets/js/script.js"></script>
+</head>
+<body>
+<div class="content">
+<div class="announcement">
+<h1>This table is showing the schedule</h1>
+<p>Start Date: <input type="text" id="datepicker"></p>
+<p>How many days do you want to show? <input type="text" id="daystoshow"></p>
+<input type="button" value="Generate a schedule table" id="generate" disabled>	
+</div>
+<br><br>
+<div class="table_container">
+</div>
+</div>
+</body>
+<script>
+  $(function() {
+    $( "#datepicker" ).datepicker();
+  });
+</script>
+</html>
